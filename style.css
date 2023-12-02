@@ -40,6 +40,7 @@
     .container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 30px;
     }
     .icon{
     font-size: 20px;
@@ -102,7 +103,9 @@
     }
 
     /* Menu Section */
-
+    #grid-align{
+        margin: 0 auto;
+    }
     .menu {
     display: flex;
     flex-direction: column;
@@ -159,6 +162,8 @@
 
     footer {
     background-color: #fff0db;
+    display: flex;
+    justify-content: center;
     }
     .link_lists h3 {
     margin-bottom: 10px;
@@ -182,7 +187,14 @@
     .footer_container {
     padding: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    /* flex-direction: row; */
+    gap:70px;
+    }
+    
+    .footer_container img{
+        width: 130px;
+        height:70px;
     }
     .icon_container {
     display: flex;
@@ -190,6 +202,7 @@
     font-size: 32px;
     }
     @media (max-width: 786px) {
+        
     .hero {
         flex-direction: column;
     }
